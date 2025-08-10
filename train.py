@@ -14,7 +14,7 @@ from model import ShakespeareGPT
 torch.manual_seed(1357)
 
 # Load data
-with open('/kaggle/input/shakespeare-full-text/shakespeare.txt','r',encoding='utf-8') as f:
+with open('/data/shakespeare.txt','r',encoding='utf-8') as f:
     data = f.read()
 
 # Initialize tokenizer and update config
@@ -103,4 +103,4 @@ if __name__ == "__main__":
     plt.savefig('losses.png')
     plt.show()
     
-    print("Training complete! Model saved to shakespeareGPT/shakespeareGPT.pth")
+    print("Training complete! Model saved to shakespeareGPT.pth")
